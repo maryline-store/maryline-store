@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ماريلاين للأزياء | متجر فساتين</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="welcome" id="welcomeMessage"></div>
+
+  <div class="toast" id="toast"></div>
+
+  <header class="header">
+    <div class="container header-top">
+      <a class="brand" href="#menu">
+        <img class="logo" src="assets/logo.jpg" alt="شعار ماريلاين للأزياء" />
+        <div class="brand-text">
+          <div class="brand-name">ماريلاين للأزياء</div>
+          <div class="brand-sub">فساتين سهرة ومناسبات</div>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <a class="btn btn-ghost" href="news.html">النشرة البريدية</a>
+        <button class="cart" id="cartBtn" type="button" aria-label="السلة">
+          🛍️ <span id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container header-nav">
+      <button class="hamburger" id="hamburgerBtn" aria-label="القائمة" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#menu">الرئيسية</a></li>
+        <li><a href="#about">عن المتجر</a></li>
+        <li><a href="#services">الفساتين</a></li>
+        <li><a href="#contact">تواصل</a></li>
+        <li><a href="news.html">اشترك</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="menu" class="section hero container">
+      <div class="hero-text">
+        <div class="pill">متجر أزياء</div>
+        <h1 class="hero-title">إطلالة وردية فاخرة… مع <span class="accent">ماريلاين</span></h1>
+        <p class="hero-desc">تشكيلة فساتين أنيقة للمناسبات والسهرة. اختاري المقاس، أضيفي للسلة، واستمتعي بتجربة تسوق راقية.</p>
+
+        <div class="hero-buttons">
+          <button class="btn btn-primary" id="subscribeBtn" type="button">اشترك الآن</button>
+          <a class="btn btn-ghost" href="#services">تصفحي الفساتين</a>
+        </div>
+
+        <p id="subscribeMessage" class="subscribe-msg">تم الاشتراك بنجاح في عروض ماريلاين 💖</p>
+
+        <div class="features">
+          <div class="feature">🚚 توصيل سريع</div>
+          <div class="feature">💳 دفع آمن</div>
+          <div class="feature">🎁 تغليف فاخر</div>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <img class="hero-img" src="assets/dress1.jpg" alt="صورة فستان" />
+        <div class="video-box">
+          <div class="video-label">فيديو فساتين (عرض أزياء)</div>
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/NUikdTdKr_M"
+              title="فيديو عرض أزياء"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-head">
+        <h2>عن المتجر</h2>
+        <p class="note">تجربة تسوق راقية وبسيطة</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>مميزات ماريلاين</h3>
+          <ul class="list">
+            <li>تشكيلة فساتين راقية للمناسبات والسهرة</li>
+            <li>خيارات مقاسات متعددة تناسب مختلف الأجسام</li>
+            <li>عرض صور واضح وتصميم أنيق متجاوب</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>وعدنا لك</h3>
+          <p class="text">واجهة فخمة وسهلة: اختاري الفستان، حددي المقاس، ثم أضيفي للسلة بكل بساطة.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <div class="section-head">
+        <h2>الفساتين</h2>
+        <p class="note">اختاري الفستان + المقاس</p>
+      </div>
+
+      <div class="products">
+        <article class="product">
+          <div class="tag">جديد</div>
+          <button class="img-btn" type="button" data-lightbox data-img="assets/dress1.jpg" data-title="فستان سهرة روز">
+            <img class="product-img" src="assets/dress1.jpg" alt="فستان 1" />
+          </button>
+          <h3 class="product-title">فستان سهرة روز</h3>
+          <p class="product-desc">تفاصيل فاخرة ولمعة ناعمة</p>
+
+          <div class="sizes">
+            <span class="sizes-label">المقاس</span>
+            <div class="size-options" role="group" aria-label="مقاسات فستان سهرة روز">
+              <label class="size"><input type="radio" name="size-1" value="S">S</label>
+              <label class="size"><input type="radio" name="size-1" value="M">M</label>
+              <label class="size"><input type="radio" name="size-1" value="L">L</label>
+              <label class="size"><input type="radio" name="size-1" value="XL">XL</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <span class="price">1,250 ر.س</span>
+            <button class="btn btn-primary btn-small" type="button"
+              data-addcart
+              data-name="فستان سهرة روز"
+              data-price="1250"
+              data-img="assets/dress1.jpg"
+              data-sizegroup="size-1">أضيفي للسلة</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="tag alt">خصم</div>
+          <button class="img-btn" type="button" data-lightbox data-img="assets/dress2.jpg" data-title="فستان كوتور">
+            <img class="product-img" src="assets/dress2.jpg" alt="فستان 2" />
+          </button>
+          <h3 class="product-title">فستان كوتور</h3>
+          <p class="product-desc">قصة أنيقة للمناسبات</p>
+
+          <div class="sizes">
+            <span class="sizes-label">المقاس</span>
+            <div class="size-options" role="group" aria-label="مقاسات فستان كوتور">
+              <label class="size"><input type="radio" name="size-2" value="S">S</label>
+              <label class="size"><input type="radio" name="size-2" value="M">M</label>
+              <label class="size"><input type="radio" name="size-2" value="L">L</label>
+              <label class="size"><input type="radio" name="size-2" value="XL">XL</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <span class="price">1,790 ر.س</span>
+            <button class="btn btn-primary btn-small" type="button"
+              data-addcart
+              data-name="فستان كوتور"
+              data-price="1790"
+              data-img="assets/dress2.jpg"
+              data-sizegroup="size-2">أضيفي للسلة</button>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="tag">مميز</div>
+          <button class="img-btn" type="button" data-lightbox data-img="assets/dress3.jpg" data-title="فستان تول فاخر">
+            <img class="product-img" src="assets/dress3.jpg" alt="فستان 3" />
+          </button>
+          <h3 class="product-title">فستان تول فاخر</h3>
+          <p class="product-desc">طبقات راقية بإطلالة فخمة</p>
+
+          <div class="sizes">
+            <span class="sizes-label">المقاس</span>
+            <div class="size-options" role="group" aria-label="مقاسات فستان تول فاخر">
+              <label class="size"><input type="radio" name="size-3" value="S">S</label>
+              <label class="size"><input type="radio" name="size-3" value="M">M</label>
+              <label class="size"><input type="radio" name="size-3" value="L">L</label>
+              <label class="size"><input type="radio" name="size-3" value="XL">XL</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <span class="price">2,150 ر.س</span>
+            <button class="btn btn-primary btn-small" type="button"
+              data-addcart
+              data-name="فستان تول فاخر"
+              data-price="2150"
+              data-img="assets/dress3.jpg"
+              data-sizegroup="size-3">أضيفي للسلة</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <div class="section-head">
+        <h2>تواصل</h2>
+        <p class="note">يسعدنا خدمتك</p>
+      </div>
+
+      <div class="contact">
+        <div class="contact-card">📍 الرياض</div>
+        <div class="contact-card">📞 0500000000</div>
+        <div class="contact-card">✉️ maryline@gmail.com</div>
+        <div class="contact-card">🕒 يوميًا 4م - 11م</div>
+      </div>
+    </section>
+  </main>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="سلة التسوق">
+    <div class="cart-head">
+      <div class="cart-title">سلة التسوق</div>
+      <button class="cart-close" id="cartClose" type="button" aria-label="إغلاق">✕</button>
+    </div>
+
+    <div class="cart-body" id="cartItems"></div>
+
+    <div class="cart-foot">
+      <div class="total-row">
+        <span>الإجمالي</span>
+        <strong id="cartTotal">0 ر.س</strong>
+      </div>
+      <button class="btn btn-primary" type="button">إتمام الطلب</button>
+    </div>
+  </aside>
+
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-overlay" id="lightboxOverlay"></div>
+    <div class="lightbox-card" role="dialog" aria-label="عرض الصورة">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="إغلاق">✕</button>
+      <div class="lightbox-title" id="lightboxTitle"></div>
+      <img class="lightbox-img" id="lightboxImg" alt="صورة المنتج" />
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-box">
+      <div>إعداد الطالبة: <strong>تالا ماجد بانافع</strong></div>
+      <div>الصف: <strong>ثاني ثانوي / 1</strong></div>
+      <div class="copy">© 2026 ماريلاين للأزياء</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="Hamburger.js"></script>
+</body>
+</html>
